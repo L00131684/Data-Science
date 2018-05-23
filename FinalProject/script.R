@@ -185,8 +185,8 @@ metric <- "Accuracy"
 
 #---- Build Models
 # a) linear algorithms
-set.seed(7)
-fit.lda <- train(Price ~ ., data = dataset, method = "lda", metric = metric, trControl = control)
+###set.seed(7)
+###fit.lda <- train(Price ~ ., data = dataset, method = "lda", metric = metric, trControl = control)
 # b) nonlinear algorithms
 # CART
 set.seed(7)
@@ -211,8 +211,11 @@ summary(results)
 # compare accuracy of models by plot
 dotplot(results)
 
+
 # summarize Best Model
 print(fit.svm)
+
+
 
 #-------------------------------------------------#
 #                                                 #
